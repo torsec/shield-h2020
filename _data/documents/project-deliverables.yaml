@@ -1,0 +1,22 @@
+- title: Lorem Ipsum Dolors
+  number: 1.2.3
+  author: John Doe
+  institution: polito
+  date: 2015-10-09
+  status: re
+  file: lipsum.pdf
+
+- title: Maecenas pulvinar
+  number: 2.2.3
+  author: Mary Jane
+  institution: agid
+  file: maecenas.pdf
+  date: 2016-01-06
+  status: pu
+
+- title: Maecenas pulvinar
+  number: 7.1
+  author: Mary Jane
+  institution: tid
+  date: 2015-11-06
+  status: co

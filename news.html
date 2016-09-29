@@ -1,0 +1,11 @@
+---
+title: News
+layout: page
+permalink: /news/
+---
+
+{% assign news_items = (site.news | sort: 'date') | reverse %}
+{% for news in news_items %}
+<h4><a href="{{ news.url }}">{{ news.date | date: "%b %-d, %Y" }} | {{ news.title }}</a></h4>
+{{ news.excerpt }}
+{% endfor %}

@@ -2,22 +2,38 @@
 layout: default
 ---
 
-<div class="home">
+<div class="jumbotron">
+  <h1>{{ site.title }}</h1>
+  <p class="lead">Securing against intruders and other threats through a NFV-enabled environment</p>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<div class="row">
+	<div class="col-sm-4 col-xs-12">
+		<h3>Network Functions Virtualisation (NFV) and virtual Network Security Functions (vNSFs)</h3>
+		<p>NFV in order to virtualise security appliances into vNSFs, to be
+instantiated within the network infrastructure using NFV technologies
+and concepts, effectively monitoring and filtering network traffic in a
+distributed manner.</p>
+	</div>
+	<div class="col-sm-4 col-xs-12">
+		<h3>Data Analysis and Remediation Engine (DARE)</h3>
+		<p>Logs and metrics from vNSFs aggregated into an information-driven DARE, in order to predict
+specific vulnerabilities and attacks by analysing the network and
+understanding the adversary possibilities, behaviour and intent.</p>
+	</div>
+	<div class="col-sm-4 col-xs-12">
+		<h3>Latest news from SHIELD</h3>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+{% assign news_items = (site.news | sort: 'date') | reverse %}
+{% for news in news_items limit:5 %}
+			<h5>
+				<span class="label label-primary">{{ news.date | date: "%b %-d, %Y" }}</span>
+				<a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | truncate:25 | escape }}</a>
+			</h5>
+	{{ news.excerpt | truncate:100 }}
+{% endfor %}<p>
+			<a href="/news/">More news...</a>
+			</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+	</div>
 </div>
