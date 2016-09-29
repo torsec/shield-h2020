@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
+			<a class="navbar-brand" href="{{ site.url | append: site.baseurl | append: '/' }}">{{ site.title }}</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
@@ -30,13 +30,13 @@
 				{% assign subsection_url = subsection | prepend:section_url | append:".html" %}
 				{% assign subsection_page = site.pages | where:"url", subsection_url | first %}
 				{% if subsection_page.title %}
-						<li><a href="{{ subsection_url }}">{{ subsection_page.title }}</a></li>
+						<li><a href="{{ subsection_url | prepend: site.baseurl }}">{{ subsection_page.title }}</a></li>
 				{% endif %}
 			{% endfor %}
 					</ul>
 				</li>
 		{% else %}
-				<li class="{{ link_class }}"><a href="{{ section_url }}">{{ section_page.title }}</a></li>
+				<li class="{{ link_class }}"><a href="{{ section_url | prepend: site.baseurl }}">{{ section_page.title }}</a></li>
 		{% endif %}
 	{% endif %}
 {% endfor %}
