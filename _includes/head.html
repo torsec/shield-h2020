@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-	<meta name="description" content="{{ page.content | strip_html | strip_newlines | truncate: 160 | remove:'...' }}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
 	{% if site.google_analytics_id %}
 	<script>
@@ -20,6 +20,7 @@
 
 	<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="author" href="https://it.linkedin.com/in/paolosmiraglia/en">
 	
 	<script src="{{ '/js/jquery.min.js' | prepend: site.baseurl }}" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
 	<script src="{{ '/js/bootstrap.min.js' | prepend: site.baseurl }}" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
