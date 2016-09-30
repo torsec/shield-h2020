@@ -7,11 +7,17 @@ layout: page
 
 <ul>
 {% for doc in doc_items %}
-<li>
-	{{ doc.author }},
-	<a href="{{ doc.file | prepend:'/files/public/' }}"><em>{{ doc.title }}</em></a>,
-	{% if site.data.partners[doc.institution] %}{{ site.data.partners[doc.institution] }}{% else %}{{ doc.institution }}{% endif %},
-	{{ doc.date | date:"%b %-d, %Y" }}
-</li>
+  <li>
+  {{ doc.author }},
+    <a href="{{ doc.file | prepend:'/files/public/' }}">
+      <em>{{ doc.title }}</em>
+    </a>,
+  {% if site.data.partners[doc.institution] %}
+    {{ site.data.partners[doc.institution] }}
+  {% else %}
+    {{ doc.institution }}
+  {% endif %},
+  {{ doc.date | date:"%b %-d, %Y" }}
+  </li>
 {% endfor %}
 </ul>

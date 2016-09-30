@@ -5,27 +5,35 @@ layout: page
 
 {% assign doc_items = (site.data.documents.project-deliverables | sort: 'date') | reverse %}
 <table class="table table-striped table-responsive">
-	<tr>
-		<th>Number</th>
-		<th>Title</th>
-		<th>Date</th>
-		<th>Leader</th>
-		<th>Download</th>
-	</tr>
+  <tr>
+    <th>Number</th>
+    <th>Title</th>
+    <th>Date</th>
+    <th>Leader</th>
+    <th>Download</th>
+  </tr>
 {% for doc in doc_items %}
-	<tr>
-	{% if doc.status == "re" or doc.status == "co" %}
-		{% assign btn_class = 'btn-danger' %}
-		{% assign base_url = '/files/private/' %}
-	{% else %}
-		{% assign btn_class = 'btn-success' %}
-		{% assign base_url = '/files/public/' %}
-	{% endif %}
-		<td>{{ doc.number | prepend:'D' }}</td>
-		<td>{{ doc.title }}</td>
-		<td>{{ doc.date | date:"%b %-d, %Y" }}</td>
-		<td>{% if site.data.partners[doc.institution] %}{{ site.data.partners[doc.institution] }}{% else %}{{ doc.institution }}{% endif %}</td>
-		<td>{% if doc.file %}<a href="{{ base_url | append: doc.file }}" class="btn btn-xs {{ btn_class }}" role="button"><span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span></a>{% endif %}</td>
-	</tr>
+  <tr>
+  {% if doc.status == "re" or doc.status == "co" %}
+    {% assign btn_class = 'btn-danger' %}
+    {% assign base_url = '/files/private/' %}
+  {% else %}
+    {% assign btn_class = 'btn-success' %}
+    {% assign base_url = '/files/public/' %}
+  {% endif %}
+    <td>{{ doc.number | prepend:'D' }}</td>
+    <td>{{ doc.title }}</td>
+    <td>{{ doc.date | date:"%b %-d, %Y" }}</td>
+    <td>{% if site.data.partners[doc.institution] %}{{ site.data.partners[doc.institution] }}{% else %}{{ doc.institution }}{% endif %}</td>
+    <td>
+  {% if doc.file %}
+      <a href="{{ base_url | append: doc.file }}"
+         class="btn btn-xs {{ btn_class }}" role="button">
+        <span class="glyphicon glyphicon-cloud-download"
+              aria-hidden="true"></span>
+      </a>
+  {% endif %}
+    </td>
+  </tr>
 {% endfor %}
 </table>
