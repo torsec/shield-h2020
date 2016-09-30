@@ -4,6 +4,10 @@ layout: page
 ---
 
 {% for partner in site.partners %}
-<h4><a href="{{ partner.url | prepend: site.baseurl }}">{{ partner.title }}</a></h4>
+<h4>
+  <a href="{{ partner.url | prepend: site.baseurl }}">
+    {{ partner.title }}
+  </a>
+</h4>
 {{ partner.excerpt | truncate:160 }}
 {% endfor %}
