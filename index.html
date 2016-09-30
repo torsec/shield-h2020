@@ -31,12 +31,8 @@ layout: default
 {% assign news_items = (site.news | sort: 'date') | reverse %}
 {% for news in news_items limit:5 %}
     <h5>
-      <span class="label label-primary">
-      {{ news.date | date: "%b %-d, %Y" }}
-      </span>
-      <a href="{{ news.url | prepend: site.baseurl }}">
-           {{ news.title | truncate:25 | escape }}
-      </a>
+      <span class="label label-primary">{{ news.date | date: "%b %-d, %Y" }}</span>
+      <a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | truncate:25 | escape }}</a>
     </h5>
   {{ news.excerpt | truncate:100 }}
 {% endfor %}
