@@ -2,11 +2,25 @@
 layout: default
 ---
 
-<article>
-  <header>
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.date | date: "%b %-d, %Y" }}</h2>
-  </header>
-  {{ content }}
-</article>
-
+<div class="row">
+  <div class="col-sm-9 col-xs-12">
+    <article>
+      <header>
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.date | date: "%b %-d, %Y" }}</h2>
+      </header>
+      {{ content }}
+    </article>
+  </div>
+  <div class="col-sm-3 text-muted" style="font-size: 85%">
+    <h4>Other news...</h4>
+{% assign news_items = (site.news | sort: 'date') | reverse %}
+{% for news in news_items %}
+  <h5>
+    <span class="label label-primary">{{ news.date | date: "%b %-d, %Y" }}</span>
+    <a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | truncate:25 | escape }}</a>
+  </h5>
+  {{ news.excerpt | truncate:100 }}
+{% endfor %}
+  </div>
+</div>
