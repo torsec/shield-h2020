@@ -39,3 +39,5 @@ google_analytics_id: UA-84944136-1
 
 sass:
   style: :compressed
+
+dataurl: "https://data.shield-h2020.eu"
