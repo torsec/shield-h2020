@@ -1,3 +1,111 @@
-polito: Politecnico di Torino
-agid: Agenzia per l'Italia Digitale
-tid: Telefònica Investigacion y Desarrollo SA
+agid:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Agenzia per l'Italia Digitale
+  url: /agenzia-per-l-italia-digitale.html
+hpelb:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Hewlett-Packard Ltd
+  url: /hewlett-packard-ltd.html
+hpis:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: HP Information Security UK Ltd
+  url: /hp-information-security-uk-ltd.html
+i2cat:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Fundacio privada i2cat, Internet i Innovacio Digital a Catalunya
+  url: /fundacio-privada-i2cat-internet-i-innovacio-digital-a-catalunya.html
+incites:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Incites Consulting Sarl
+  url: /incites-consulting-sarl.html
+infili:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Infili Technologies Private Company
+  url: /infili-technologies-private-company.html
+orion:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Orion Innovations Private Company
+  url: /orion-innovations-private-company.html
+polito:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Politecnico Di Torino
+  url: /politecnico-di-torino.html
+sph:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Space Hellas Anonymi Etaireia Systimata Kai Ypiresies Tilepikoinonionpliroforikis
+    Asfaleias - Idiotiki Epicheirisi Parochis Yperision Asfa
+  url: /space-hellas-anonymi-etaireia-systimata-kai-ypiresies-tilepikoinonionpliroforikis-asfaleias-idiotiki-epicheirisi-parochis-yperision-asfa.html
+tid:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Telefonica Investigacion y Desarrollo SA
+  url: /telefonica-investigacion-y-desarrollo-sa.html
+ubi:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Ubiwhere Lda
+  url: /ubiwhere-lda.html
