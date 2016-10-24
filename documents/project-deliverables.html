@@ -5,7 +5,7 @@ layout: page
 
 {% assign doc_items = (site.data.documents.project-deliverables | sort: 'date') | reverse %}
 <div class="table-responsive">
-  <table class="table table-striped">
+  <table id="deliverables-table" class="table table-striped">
     <thead>
       <tr>
         <th></th>
@@ -26,10 +26,10 @@ layout: page
     {% assign base_url = '/documents/' %}
   {% endif %}
         <td>
-  {% if doc.file %}
+  {% if doc.file != "" %}
           <a href="{{ base_url | prepend: site.dataurl | append: 'deliverables/' | append: doc.file }}"
              class="btn btn-xs {{ btn_class }}" role="button"
-             name="{{ doc.number | prepend: 'D'}} - {{ doc.title }}">
+             title="{{ site.title }} - {{ doc.number | prepend: 'D'}} - {{ doc.title }}">
             <i class="fa fa-download" aria-hidden="true"></i>
           </a>
   {% else %}
@@ -40,10 +40,36 @@ layout: page
         </td>
         <td>{{ doc.number | prepend:'D' }}</td>
         <td>{{ doc.title }}</td>
-        <td>{{ doc.date | date:"%b %-d, %Y" }}</td>
-        <td>{% if site.data.partners[doc.institution] %}{{ site.data.partners[doc.institution] }}{% else %}{{ doc.institution }}{% endif %}</td>
+        <td>{{ site.data.months[doc.date] | date:"%Y/%m" }}</td>
+        <td>
+  {% if site.data.partners[doc.leader] %}
+    {% assign leader = site.data.partners[doc.leader].fullname %}
+    {% assign leader_url = site.data.partners[doc.leader].url %}
+          <a href="{{ leader_url | prepend:'/about/consortium' | prepend: site.baseurl  }}"
+             title="{{ site.title}} - {{ leader }}">
+             {{ leader | truncate:32 }}
+          </a>
+  {% else %}
+    {{ doc.leader }}
+  {% endif %}
+        </td>
       </tr>
 {% endfor %}
     </tbody>
   </table>
 </div>
+
+<script>
+$(document).ready(function() {
+  $('#deliverables-table').DataTable( {
+    "order": [[3, "asc"]],
+    "paging": false,
+    "info": false,
+    "searching": false,
+    "columnDefs": [ {
+      "targets": 0,
+      "sortable": false
+    } ]
+  } );
+} );
+</script>
