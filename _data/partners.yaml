@@ -16,8 +16,8 @@ hpelb:
     name: null
   - email: null
     name: null
-  fullname: Hewlett-Packard Ltd
-  url: /hewlett-packard-ltd.html
+  fullname: Hewlett-Packard Limited (Labs)
+  url: /hewlett-packard-labs.html
 hpis:
   contacts:
   - email: null
@@ -26,8 +26,8 @@ hpis:
     name: null
   - email: null
     name: null
-  fullname: HP Information Security UK Ltd
-  url: /hp-information-security-uk-ltd.html
+  fullname: Hewlett-Packard Limited (Information Security)
+  url: /hewlett-packard-is.html
 i2cat:
   contacts:
   - email: null
@@ -36,8 +36,8 @@ i2cat:
     name: null
   - email: null
     name: null
-  fullname: Fundacio privada i2cat, Internet i Innovacio Digital a Catalunya
-  url: /fundacio-privada-i2cat-internet-i-innovacio-digital-a-catalunya.html
+  fullname: Fundació i2CAT, Internet I Innovació Digital a Catalunya
+  url: /fundacio-i2cat-internet-i-innovacio-digital-a-catalunya.html
 incites:
   contacts:
   - email: null
@@ -46,7 +46,7 @@ incites:
     name: null
   - email: null
     name: null
-  fullname: Incites Consulting Sarl
+  fullname: Incites Consulting SARL
   url: /incites-consulting-sarl.html
 infili:
   contacts:
@@ -86,9 +86,8 @@ sph:
     name: null
   - email: null
     name: null
-  fullname: Space Hellas Anonymi Etaireia Systimata Kai Ypiresies Tilepikoinonionpliroforikis
-    Asfaleias - Idiotiki Epicheirisi Parochis Yperision Asfa
-  url: /space-hellas-anonymi-etaireia-systimata-kai-ypiresies-tilepikoinonionpliroforikis-asfaleias-idiotiki-epicheirisi-parochis-yperision-asfa.html
+  fullname: Space Hellas S.A.
+  url: /space-hellas-sa.html
 tid:
   contacts:
   - email: null
@@ -97,7 +96,7 @@ tid:
     name: null
   - email: null
     name: null
-  fullname: Telefonica Investigacion y Desarrollo SA
+  fullname: Telefónica Investigación y desarrollo S.A.
   url: /telefonica-investigacion-y-desarrollo-sa.html
 ubi:
   contacts:
@@ -107,5 +106,5 @@ ubi:
     name: null
   - email: null
     name: null
-  fullname: Ubiwhere Lda
+  fullname: Ubiwhere, Lda.
   url: /ubiwhere-lda.html
