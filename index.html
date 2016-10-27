@@ -3,9 +3,16 @@ layout: default
 ---
 
 <div class="jumbotron">
-  <h1>{{ site.title }}</h1>
-  <p class="lead">Securing against intruders and other threats through a
-  NFV-enabled environment</p>
+	<h1>{{ site.title }}</h1>
+	<p class="lead">
+	Securing against intruders and other threats through a
+	NFV-enabled environment
+	</p>
+	<p>
+	<a class="btn btn-primary btn-lg"
+	href="{{ 'goals.html' | prepend: '/about/' | prepend: site.baseurl }}"
+	role="button">Learn more</a>
+	</p>
 </div>
 
 <div class="row">
@@ -36,8 +43,10 @@ layout: default
     </h5>
   {{ news.excerpt | truncate:100 }}
 {% endfor %}
-    <p>
+    {% if site.news %}
+	<p>
       <a href="{{ site.baseurl | append: '/news/' }}">More news...</a>
     </p>
+	{% endif %}
   </div>
 </div>
