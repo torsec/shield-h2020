@@ -7,18 +7,34 @@ layout: default
     <article>
       <header>
         <h1>{{ page.title }}</h1>
-      </header>
-      {{ content }}
-    </article>
+		<hr/>
+	  </header>
+	  
+	  <div class="row">
+		<div class="col-md-9 col-xs-12">
+		{{ content }}
+		 </div>
+		<div class="col-md-3 col-md-offset-0 col-xs-offset-4 col-xs-4">
+			<img alt="Logo of {{ site.data.partners[page.partner].fullname}}"
+			src="{{ page.partner | append: '.png' | prepend: '/img/logo/' | prepend: site.baseurl }}"
+			class="img-responsive"
+			title="{{ site.data.partners[page.partner].fullname}}"/>
+		</div>
+	  </div>
+	
+	</article>
   </div>
-  <div class="col-sm-3 col-xs-12 text-muted" style="font-size: 85%">
+ <div class="col-sm-3 col-xs-12 text-muted" style="font-size: 85%">
     <h4>Other partners...</h4>
 {% assign news_items = site.partners %}
 {% for news in news_items %}
-    <h5>
-      <a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | scape }}</a>
-    </h5>
-  {{ news.excerpt | truncate:100 }}
+	{% if news.url != page.url %}
+
+		<h5>
+			<a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | scape }}</a>
+		 </h5>
+		{{ news.excerpt | truncate:100 }}
+	{% endif %}
 {% endfor %}
   </div>
 </div>
