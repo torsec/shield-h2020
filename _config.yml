@@ -41,3 +41,5 @@ sass:
   style: :compressed
 
 dataurl: "https://data.shield-h2020.eu"
+
+future: true
