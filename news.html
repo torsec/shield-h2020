@@ -4,12 +4,16 @@ layout: page
 permalink: /news/
 ---
 
-{% assign news_items = (site.news | sort: 'date') | reverse %}
-{% for news in news_items %}
-<h4>
-  <a href="{{ news.url | prepend: site.baseurl }}">
-    {{ news.date | date: "%b %-d, %Y" }} | {{ news.title }}
-  </a>
-</h4>
-{{ news.excerpt }}
-{% endfor %}
+{% if site.news.size > 0 %}
+	{% assign news_items = (site.news | sort: 'date') | reverse %}
+	{% for news in news_items %}
+	<h4>
+	<a href="{{ news.url | prepend: site.baseurl }}">
+		{{ news.date | date: "%b %-d, %Y" }} | {{ news.title }}
+	</a>
+	</h4>
+	{{ news.excerpt }}
+	{% endfor %}
+{% else %}
+	There are no news available at the moment.
+{% endif %}
