@@ -3,11 +3,21 @@ title: Consortium
 layout: page
 ---
 
+<p>The SHIELD consortium is composed of 11 partners around Europe, well
+distributed between legal bodies, private companies, large corporations, and
+research and academic partners. The diversity of expertise within SHIELD is
+essential in order to achieve the technological challenges of the project.
+</p>
+<br/>
+<ol>
 {% for partner in site.partners %}
+<li>
 <h4>
-  <a href="{{ partner.url | prepend: site.baseurl }}">
-    {{ partner.title }}
-  </a>
+	<a href="{{ partner.url | prepend: site.baseurl }}">
+	{{ partner.title }}
+	</a>
 </h4>
 {{ partner.excerpt | truncate:160 }}
+</li>
 {% endfor %}
+</ol>
