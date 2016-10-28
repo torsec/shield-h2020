@@ -2,42 +2,31 @@
 layout: default
 ---
 
-<div class="jumbotron">
-	<h1>{{ site.title }}</h1>
-	<p class="lead">
-	Securing against intruders and other threats through a
-	NFV-enabled environment
-	</p>
-	<p>
-	<a class="btn btn-primary btn-lg"
-	href="{{ 'summary.html' | prepend: '/about/' | prepend: site.baseurl }}"
-	role="button">Learn more</a>
-	</p>
+<div class="row">
+
+<div class="col-md-8 col-xs-12">
+
+	<div class="jumbotron">
+		<h1>{{ site.title }}</h1>
+		<p class="lead">
+		Securing against intruders and other threats through a
+		<nobr>NFV-enabled</nobr> environment
+		</p>
+		<p>
+		<a class="btn btn-primary btn-lg"
+		href="{{ 'summary.html' | prepend: '/about/' | prepend: site.baseurl }}"
+		role="button">Learn more</a>
+		</p>
+	</div>
 </div>
 
-<div class="row">
-  <div class="col-sm-4 col-xs-12">
-    <h3>Network Functions Virtualisation (NFV) and virtual Network Security
-    Functions (vNSFs)</h3>
-    <p class="text-justify">NFV in order to virtualise security appliances into vNSFs, to be
-    instantiated within the network infrastructure using NFV technologies and
-    concepts, effectively monitoring and filtering network traffic in a
-    distributed manner.</p>
-  </div>
+<div class="col-md-4 col-xs-12">
 
-  <div class="col-sm-4 col-xs-12">
-    <h3>Data Analysis and Remediation Engine (DARE)</h3>
-    <p class="text-justify">Logs and metrics from vNSFs aggregated into an information-driven
-    DARE, in order to predict specific vulnerabilities and attacks by
-    analysing the network and understanding the adversary possibilities,
-    behaviour and intent.</p>
-  </div>
-
-  <div class="col-sm-4 col-xs-12">
     <h3>Latest news from SHIELD</h3>
+
 	{% capture today_date %}{{site.time | date: '%-d %Y'}}{% endcapture %}
 {% assign news_items = (site.news | sort: 'date') | reverse %}
-{% for news in news_items limit:5 %}
+{% for news in news_items limit:3 %}
     <h5>
 	  {% capture news_date %}{{news.date | date: '%-d %Y'}}{% endcapture %}
 	  {% if  today_date != news_date  %}
@@ -49,10 +38,58 @@ layout: default
     </h5>
   {{ news.excerpt | truncate:100 }}
 {% endfor %}
-    {% if site.news %}
+	{% if site.news.size > 3 %}
 	<p>
-      <a href="{{ site.baseurl | append: '/news/' }}">More news...</a>
-    </p>
+    <a  href="{{ site.baseurl | append: '/news/' }}">More news...</a>
+	</p>
 	{% endif %}
+	
+</div>
+
+</div>
+<div class="row">
+  <div class="col-sm-4 col-xs-12">
+    <h3>Data Analysis and Remediation Engine (DARE)</h3>
+    <p class="text-justify">
+	An information-driven
+	<abbr title="Intrusion Detection and Prevention System">IDPS</abbr>
+	platform capable of predicting specific
+	vulnerabilities and attacks by relying on <strong>Big Data</strong>, 
+	<strong>Threat Monitoring</strong> 	and <strong>Machine Learning</strong>
+	to analyise the output produced by vNSFs.
+	Pattern discovery techniques analyse data to identify current malicious
+	behaviours or predict likely threats. Analysis' results are accessible 
+	by systems and security administrators via a dashboard.
+	</p>
+  </div>
+
+<div class="col-sm-4 col-xs-12">
+    <h3>Network Functions Virtualisation (NFV) and virtual Network Security
+    Functions (vNSFs)</h3>
+    <p class="text-justify">
+	NFV enables the virtualisation of network and security
+	appliances. The resulting virtual appliances, named vNSFs, are
+	instantiated within the network infrastructure by a
+	<strong>vNSFs orchestrator</strong> in order to effectively
+	monitor and filter network traffic in a distributed manner.
+	Advertisement, browsing, selection and trading of
+	vNSFs in a secure manner is provided by a logically centralised
+	repository, named <strong>vNSFs store</strong>.
+	
+	</p>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+	<h3>Trusted Computing (TC)</h3>
+	<p class="text-justify">
+	The <strong>trustworthiness</strong> of the secure SHIELD framework is
+	implemented by relying on TC technologies.
+	The infrastructure attestation binds the vNSFs and the
+	network configuration with the store and orchestration of the network.
+	The key components of the secure SHIELD framework will
+	be protected by using the <abbr title="Trusted Platform Module">TPM</abbr>,
+	a TC hardware that assures the integrity of the software and the
+	configuration.
+	</p>
   </div>
 </div>
