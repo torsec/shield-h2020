@@ -35,10 +35,16 @@ layout: default
 
   <div class="col-sm-4 col-xs-12">
     <h3>Latest news from SHIELD</h3>
+	{% capture today_date %}{{site.time | date: '%-d %Y'}}{% endcapture %}
 {% assign news_items = (site.news | sort: 'date') | reverse %}
 {% for news in news_items limit:5 %}
     <h5>
+	  {% capture news_date %}{{news.date | date: '%-d %Y'}}{% endcapture %}
+	  {% if  today_date != news_date  %}
       <span class="label label-primary">{{ news.date | date: "%b %-d, %Y" }}</span>
+	  {% else %}
+	  <span class="label label-primary">Today</span>
+	  {% endif %}
       <a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | truncate:25 | escape }}</a>
     </h5>
   {{ news.excerpt | truncate:100 }}

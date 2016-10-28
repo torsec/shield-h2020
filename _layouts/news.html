@@ -2,25 +2,45 @@
 layout: default
 ---
 
+{% capture today_date %}{{site.time | date: '%-d %Y'}}{% endcapture %}
+{% capture news_date %}{{page.date | date: '%-d %Y'}}{% endcapture %}
+
 <div class="row">
   <div class="col-sm-9 col-xs-12">
     <article>
       <header>
-        <h1>{{ page.title }} <small>{{ page.date | date: "%b %-d, %Y" }}</small></h1>
+        <h1>{{ page.title }}
+		{% if today_date != news_date %}
+		<small>{{ page.date | date: "%b %-d, %Y" }}</small></h1>
+		{% else %}
+		<small>Today</small></h1>
+		{% endif %}
 	  </header>
       <br/>
 	  {{ content }}
     </article>
   </div>
   <div class="col-sm-3 text-muted" style="font-size: 85%">
-    <h4>Other news...</h4>
+    <h4>Other news</h4>
+
 {% assign news_items = (site.news | sort: 'date') | reverse %}
+{% if news_items.size > 1 %}
 {% for news in news_items %}
-  <h5>
-    <span class="label label-primary">{{ news.date | date: "%b %-d, %Y" }}</span>
-    <a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | truncate:25 | escape }}</a>
-  </h5>
-  {{ news.excerpt | truncate:100 }}
+	{% capture other_news_date %}{{news.date | date: '%-d %Y'}}{% endcapture %}
+		{% unless news.title == page.title and other_news_date == news_date %}
+			<h5>
+			{% if other_news_date != today_date %}
+				<span class="label label-primary">{{ news.date | date: "%b %-d, %Y" }}</span>
+			{% else %}
+				<span class="label label-primary">Today</span>
+			{% endif %}
+			<a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | truncate:25 | escape }}</a>
+			</h5>
+			{{ news.excerpt | truncate:100 }}
+		{% endunless %}
 {% endfor %}
+{% else %}
+No other news available.
+{% endif %}
   </div>
 </div>
