@@ -41,8 +41,12 @@ layout: page
         </td>
         <td>{{ doc.number | prepend:'D' }}</td>
         <td>{{ doc.title }}</td>
-		<td>{% if doc.status == "co" %} {{ "Confidential" }}{% endif %}
-			{% if doc.status == "pu" %} {{ "Public" }}{% endif %}
+		<td>{% if doc.status == "co" %}
+			<span class="label label-danger">Confidential</span>
+			{% endif %}
+			{% if doc.status == "pu" %}
+			<span class="label label-success">Public</span>
+			{% endif %}
         <td>{{ site.data.months[doc.date] | date:"%Y/%m" }}</td>
         <td>
   {% if site.data.partners[doc.leader] %}
@@ -65,7 +69,7 @@ layout: page
 <script>
 $(document).ready(function() {
   $('#deliverables-table').DataTable( {
-    "order": [[3, "asc"]],
+    "order": [[4, "asc"]],
     "paging": false,
     "info": false,
     "searching": false,
