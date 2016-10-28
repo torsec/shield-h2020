@@ -11,6 +11,7 @@ layout: page
         <th></th>
         <th>Number</th>
         <th>Title</th>
+		<th>Dissemination level</th>
         <th>Date</th>
         <th>Leader</th>
       </tr>
@@ -40,6 +41,8 @@ layout: page
         </td>
         <td>{{ doc.number | prepend:'D' }}</td>
         <td>{{ doc.title }}</td>
+		<td>{% if doc.status == "co" %} {{ "Confidential" }}{% endif %}
+			{% if doc.status == "pu" %} {{ "Public" }}{% endif %}
         <td>{{ site.data.months[doc.date] | date:"%Y/%m" }}</td>
         <td>
   {% if site.data.partners[doc.leader] %}
