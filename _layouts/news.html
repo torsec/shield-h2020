@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% capture today_date %}{{site.time | date: '%-d %Y'}}{% endcapture %}
+{% capture today_date %}{{'now' | date: '%-d %Y'}}{% endcapture %}
 {% capture news_date %}{{page.date | date: '%-d %Y'}}{% endcapture %}
 
 <div class="row">
