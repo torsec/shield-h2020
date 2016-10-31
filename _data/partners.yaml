@@ -18,16 +18,6 @@ hpelb:
     name: null
   fullname: Hewlett-Packard Limited (Labs)
   url: /hewlett-packard-labs.html
-hpis:
-  contacts:
-  - email: null
-    name: null
-  - email: null
-    name: null
-  - email: null
-    name: null
-  fullname: Hewlett-Packard Limited (Information Security)
-  url: /hewlett-packard-is.html
 i2cat:
   contacts:
   - email: null
@@ -58,6 +48,12 @@ infili:
     name: null
   fullname: Infili Technologies Private Company
   url: /infili-technologies-private-company.html
+ncsrd:
+  contacts:
+  - email: null
+    name: null
+  fullname: National Center for Scientific Research Demokritos
+  url: /national-center-scientific-research-demokritos.html
 orion:
   contacts:
   - email: null
