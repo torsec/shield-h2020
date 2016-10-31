@@ -24,7 +24,7 @@ layout: default
 
     <h3>Latest news from SHIELD</h3>
 
-	{% capture today_date %}{{site.time | date: '%-d %Y'}}{% endcapture %}
+	{% capture today_date %}{{ 'now' | date: '%-d %Y'}}{% endcapture %}
 {% assign news_items = (site.news | sort: 'date') | reverse %}
 {% for news in news_items limit:3 %}
     <h5>
