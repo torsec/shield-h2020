@@ -9,15 +9,22 @@ research and academic partners. The diversity of expertise within SHIELD is
 essential in order to achieve the technological challenges of the project.
 </p>
 <br/>
-<ul class="list-unstyled">
+<ul class="media-list">
 {% for partner in site.partners %}
-<li>
-<h4>
-	<a href="{{ partner.url | prepend: site.baseurl }}">
-	{{ partner.title }}
-	</a>
-</h4>
-{{ partner.excerpt | truncate:160 }}
+<li class="media">
+	<div class="media-left">
+		<a href="{{ partner.url | prepend: site.baseurl }}">
+			<img class="media-object"
+				src="{{partner.partner | append: '.png' | prepend: '/img/thumbnails/' | prepend: site.baseurl }}"
+				alt="{{partner.title}}"/>
+		</a>
+	</div>
+	<div class="media-body">
+		<a href="{{ partner.url | prepend: site.baseurl }}">
+			<h4>{{partner.title}}</h4>
+		</a>
+		{{ partner.excerpt | truncate:300 }}
+	</div>
 </li>
 {% endfor %}
 </ul>
