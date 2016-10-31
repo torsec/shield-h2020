@@ -58,6 +58,12 @@ infili:
     name: null
   fullname: Infili Technologies Private Company
   url: /infili-technologies-private-company.html
+ncsrd:
+  contacts:
+  - email: null
+    name: null
+  fullname: National Center for Scientific Research Demokritos
+  url: /national-center-scientific-research-demokritos.html
 orion:
   contacts:
   - email: null
