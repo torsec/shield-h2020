@@ -16,11 +16,13 @@ essential in order to achieve the technological challenges of the project.
 		<a href="{{ partner.url | prepend: site.baseurl }}">
 			<img class="media-object"
 				src="{{partner.partner | append: '.png' | prepend: '/img/thumbnails/' | prepend: site.baseurl }}"
-				alt="{{partner.title}}"/>
+				alt="{{partner.title}}"
+				title="{{partner.title}}"/>
 		</a>
 	</div>
 	<div class="media-body">
-		<a href="{{ partner.url | prepend: site.baseurl }}">
+		<a href="{{ partner.url | prepend: site.baseurl }}"
+		title="{{partner.title}}">
 			<h4>{{partner.title}}</h4>
 		</a>
 		{{ partner.excerpt | truncate:300 }}
