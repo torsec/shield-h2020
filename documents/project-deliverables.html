@@ -21,12 +21,10 @@ layout: page
       <tr>
 
   {% if doc.status == "re" or doc.status == "co" %}
-    <!--{% assign btn_class = 'btn-danger' %}-->
-    {% assign btn_class = 'btn-default' %}
+    {% assign btn_class = 'btn-danger' %}
     {% assign base_url = '/p/documents/' %}
   {% else %}
-    <!--{% assign btn_class = 'btn-success' %}-->
-	{% assign btn_class = 'btn-default' %}
+    {% assign btn_class = 'btn-success' %}
     {% assign base_url = '/documents/' %}
   {% endif %}
         <td>
@@ -37,9 +35,9 @@ layout: page
             <i class="fa fa-download" aria-hidden="true"></i>
           </a>
   {% else %}
-          <!--button class="btn btn-xs btn-disabled">
+          <button class="btn btn-xs btn-disabled">
             <i class="fa fa-download" aria-hidden="true"></i>
-          </button-->
+          </button>
   {% endif %}
         </td>
         <td>{{ doc.number | prepend:'D' }}</td>
