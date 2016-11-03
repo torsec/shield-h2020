@@ -34,7 +34,7 @@ layout: default
 			{% else %}
 				<span class="label label-primary">Today</span>
 			{% endif %}
-			<a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | truncate:25 | escape }}</a>
+			<a href="{{ news.url | prepend: site.baseurl }}" title="Read &quot;{{ news.title | escape_once }}&quot;">{{ news.title | truncate:25 | escape_once }}</a>
 			</h5>
 			{{ news.excerpt | truncate:100 }}
 		{% endunless %}

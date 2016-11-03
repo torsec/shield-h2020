@@ -54,7 +54,7 @@ layout: page
     {% assign leader = site.data.partners[doc.leader].fullname %}
     {% assign leader_url = site.data.partners[doc.leader].url %}
           <a href="{{ leader_url | prepend:'/about/consortium' | prepend: site.baseurl  }}"
-             title="{{ site.title}} - {{ leader }}">
+             title="Go to &quot;{{ leader | escape_once }}&quot; page">
              {{ leader | truncate:32 }}
           </a>
   {% else %}

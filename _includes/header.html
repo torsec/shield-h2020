@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <a class="navbar-brand" href="{{ site.baseurl }}/" title="{{ site.title }}">{{ site.title }}</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
@@ -28,7 +28,7 @@
     {% assign href = href | append: 'latest/' %}
   {% endif %}
         <li class="{{ link_class }}">
-          <a class="page-link" href="{{ href }}">{{ p.title }}</a>
+          <a class="page-link" href="{{ href }}" title="{{ p.title }}">{{ p.title }}</a>
         </li>
   {% endif %}
 {% endfor %}

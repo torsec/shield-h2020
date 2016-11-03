@@ -15,6 +15,7 @@ layout: default
 		<p>
 		<a class="btn btn-primary btn-lg"
 		href="{{ 'summary.html' | prepend: '/about/' | prepend: site.baseurl }}"
+        title="Learn more about {{ site.title }}"
 		role="button">Learn more</a>
 		</p>
 	</div>
@@ -34,16 +35,16 @@ layout: default
 	  {% else %}
 	  <span class="label label-primary">Today</span>
 	  {% endif %}
-      <a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | truncate:25 | escape }}</a>
+      <a href="{{ news.url | prepend: site.baseurl }}" title="Read &quot;{{ news.title | escape_once }}&quot;">{{ news.title | truncate:25 | escape }}</a>
     </h5>
   {{ news.excerpt | truncate:100 }}
 {% endfor %}
 	{% if site.news.size > 3 %}
 	<p>
-    <a  href="{{ site.baseurl | append: '/news/' }}">More news...</a>
+    <a  href="{{ site.baseurl | append: '/news/' }}" title="Get more news">More news...</a>
 	</p>
 	{% endif %}
-	
+
 </div>
 
 </div>
@@ -54,11 +55,11 @@ layout: default
 	An information-driven
 	<abbr title="Intrusion Detection and Prevention System">IDPS</abbr>
 	platform capable of predicting specific
-	vulnerabilities and attacks by relying on <strong>Big Data</strong>, 
+	vulnerabilities and attacks by relying on <strong>Big Data</strong>,
 	<strong>Threat Monitoring</strong> 	and <strong>Machine Learning</strong>
 	to analyise the output produced by vNSFs.
 	Pattern discovery techniques analyse data to identify current malicious
-	behaviours or predict likely threats. Analysis' results are accessible 
+	behaviours or predict likely threats. Analysis' results are accessible
 	by systems and security administrators via a dashboard.
 	</p>
   </div>
@@ -75,7 +76,7 @@ layout: default
 	Advertisement, browsing, selection and trading of
 	vNSFs in a secure manner is provided by a logically centralised
 	repository, named <strong>vNSFs store</strong>.
-	
+
 	</p>
   </div>
 

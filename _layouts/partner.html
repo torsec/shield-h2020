@@ -9,7 +9,7 @@ layout: default
         <h1>{{ page.title }}</h1>
 		<hr/>
 	  </header>
-	  
+
 	  <div class="row">
 		<div class="col-md-9 col-xs-12">
 		{{ content }}
@@ -21,7 +21,7 @@ layout: default
 			title="{{ site.data.partners[page.partner].fullname}}"/>
 		</div>
 	  </div>
-	
+
 	</article>
   </div>
  <div class="col-sm-3 col-xs-12 text-muted" style="font-size: 85%">
@@ -31,7 +31,7 @@ layout: default
 	{% if news.url != page.url %}
 
 		<h5>
-			<a href="{{ news.url | prepend: site.baseurl }}">{{ news.title | scape }}</a>
+			<a href="{{ news.url | prepend: site.baseurl }}" title="Go to &quot;{{ news.title | escape_once }}&quot; page">{{ news.title | escape_once }}</a>
 		 </h5>
 		{{ news.excerpt | truncate:100 }}
 	{% endif %}
