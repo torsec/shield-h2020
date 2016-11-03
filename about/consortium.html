@@ -13,16 +13,16 @@ essential in order to achieve the technological challenges of the project.
 {% for partner in site.partners %}
 <li class="media">
 	<div class="media-left">
-		<a href="{{ partner.url | prepend: site.baseurl }}">
+		<a href="{{ partner.url | prepend: site.baseurl }}" title="Go to &quot;{{ partner.title | escape_once }}&quot; page">
 			<img class="media-object"
 				src="{{partner.partner | append: '.png' | prepend: '/img/thumbnails/' | prepend: site.baseurl }}"
-				alt="{{partner.title}}"
-				title="{{partner.title}}"/>
+				alt="{{partner.title}} logo"
+				title="Logo of &quot;{{partner.title}}&quot;"/>
 		</a>
 	</div>
 	<div class="media-body">
 		<a href="{{ partner.url | prepend: site.baseurl }}"
-		title="{{partner.title}}">
+		title="Go to &quot;{{ partner.title | escape_once }}&quot; page">
 			<h4>{{partner.title}}</h4>
 		</a>
 		{{ partner.excerpt | truncate:300 }}
