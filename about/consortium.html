@@ -10,7 +10,8 @@ essential in order to achieve the technological challenges of the project.
 </p>
 <br/>
 <ul class="media-list">
-{% for partner in site.partners %}
+{% assign partners = site.partners | sort:"weight" %}
+{% for partner in partners %}
 <li class="media">
 	<div class="media-left">
 		<a href="{{ partner.url | prepend: site.baseurl }}" title="Go to &quot;{{ partner.title | escape_once }}&quot; page">
@@ -23,7 +24,11 @@ essential in order to achieve the technological challenges of the project.
 	<div class="media-body">
 		<a href="{{ partner.url | prepend: site.baseurl }}"
 		title="Go to &quot;{{ partner.title | escape_once }}&quot; page">
-			<h4>{{partner.title}}</h4>
+			<h4>{{partner.title}}
+			{% if partner.role %}
+			 - <strong>{{partner.role}}</strong>
+			{% endif %}
+			</h4>
 		</a>
 		{{ partner.excerpt | truncate:300 }}
 	</div>
