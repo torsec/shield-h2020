@@ -4,21 +4,16 @@ layout: default
 
 <div class="row">
 
+
 <div class="col-md-8 col-xs-12">
 
-	<div class="jumbotron">
-		<h1>{{ site.title }}</h1>
-		<p class="lead">
-		Securing against intruders and other threats through a
-		<nobr>NFV-enabled</nobr> environment
-		</p>
-		<p>
-		<a class="btn btn-primary btn-lg"
+	<img class="img-responsive" src="{{'jumbotron.jpg' | prepend: '/img/' | prepend: site.baseurl }}"
+		title="SHIELD: Securing against intruders and other threats through a NFV-enabled environment"/>
+	
+	<a class="btn btn-primary btn-lg" style="position:absolute;bottom:20%;left:10%;max-height:20%"
 		href="{{ 'summary.html' | prepend: '/about/' | prepend: site.baseurl }}"
         title="Learn more about {{ site.title }}"
 		role="button">Learn more</a>
-		</p>
-	</div>
 </div>
 
 <div class="col-md-4 col-xs-12">
