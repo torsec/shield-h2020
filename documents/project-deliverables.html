@@ -29,7 +29,7 @@ layout: page
   {% endif %}
         <td>
   {% if doc.file != "" %}
-          <a href="{{ base_url | prepend: site.dataurl | append: 'deliverables/' | append: doc.file }}"
+          <a href="{{ site.baseurl | append: base_url | append: 'project-deliverables/' | append: doc.file }}"
              class="btn btn-xs {{ btn_class }}" role="button"
              title="{{ site.title }} - {{ doc.number | prepend: 'D'}} - {{ doc.title }}">
             <i class="fa fa-download" aria-hidden="true"></i>
