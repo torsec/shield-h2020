@@ -19,25 +19,24 @@ layout: page
     <tbody>
 {% for doc in doc_items %}
       <tr>
-
+        <td>
   {% if doc.status == "re" or doc.status == "co" %}
     {% assign btn_class = 'btn-danger' %}
     {% assign base_url = '/p/documents/' %}
   {% else %}
     {% assign btn_class = 'btn-success' %}
     {% assign base_url = '/documents/' %}
-  {% endif %}
-        <td>
-  {% if doc.file != "" %}
+    {% if doc.file != "" %}
           <a href="{{ site.baseurl | append: base_url | append: 'project-deliverables/' | append: doc.file }}"
              class="btn btn-xs {{ btn_class }}" role="button"
              title="{{ site.title }} - {{ doc.number | prepend: 'D'}} - {{ doc.title }}">
             <i class="fa fa-download" aria-hidden="true"></i>
           </a>
-  {% else %}
+    {% else %}
           <button class="btn btn-xs btn-disabled">
             <i class="fa fa-download" aria-hidden="true"></i>
           </button>
+    {% endif %}
   {% endif %}
         </td>
         <td>{{ doc.number | prepend:'D' }}</td>
