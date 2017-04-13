@@ -4,7 +4,7 @@ layout: news
 ---
 
 On April 4, 2017, the event [CTS2017][1] in Rome (Italy) will present and
-discuss cybersecurity issues with Public Administration IT administratorsi,
+discuss cybersecurity issues with Public Administration IT administrators,
 and decision-makers. POLITO will present the concepts behind SHIELD to the
 audience of this initiative.
 
