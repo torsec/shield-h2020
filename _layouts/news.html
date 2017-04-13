@@ -47,7 +47,7 @@ layout: default
 			{% endif %}
 			<a href="{{ news.url | prepend: site.baseurl }}" title="Read &quot;{{ news.title | escape_once }}&quot;">{{ news.title | truncate:25 | escape_once }}</a>
 			</h5>
-			{{ news.excerpt | truncate:100 }}
+			{{ news.excerpt | strip_html | truncate:100 }}
 		{% endunless %}
 {% endfor %}
 {% else %}
