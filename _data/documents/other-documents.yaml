@@ -1,17 +1,15 @@
 - title: Lorem Ipsum Dolors
-  author: John Doe
-  institution: polito
+  author: polito
   date: 2015-10-09
   file: lipsum.pdf
+  comment: test
 
 - title: Maecenas pulvinar
-  author: Mary Jane
-  institution: agid
+  author: agid
   file: maecenas.pdf
   date: 2016-01-06
 
 - title: Maecenas pulvinar
-  author: Mary Jane
-  institution: tid
+  author: tid
   file: maecenas.pdf
   date: 2015-11-06
