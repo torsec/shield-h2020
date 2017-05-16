@@ -1,17 +1,30 @@
-- title: Lorem Ipsum Dolors
-  author: John Doe
-  institution: polito
-  date: 2015-10-09
-  file: lipsum.pdf
+- title: "Cybersecurity and Big Data, a necessary binomial"
+  author: SHIELD consortium
+  date: 2016-11
+  file: BDVA_2016_presentation.pdf
+  comment: "Presentation at the Big Data Value Association (BDVA) General Meeting, Valencia (Spain)"
 
-- title: Maecenas pulvinar
-  author: Mary Jane
-  institution: agid
-  file: maecenas.pdf
-  date: 2016-01-06
+- title: "Enhanced IoT security through orchestrated policy enforcement gateways"
+  author: Hewlett-Packard Limited (Labs)
+  file: CESAR_2016_presentation.pdf
+  date: 2016-11
+  comment: "Presentation at the Computer & Electronics Security Applications Rendez-vous (C&ESAR), Rennes (France)"
 
-- title: Maecenas pulvinar
-  author: Mary Jane
-  institution: tid
-  file: maecenas.pdf
-  date: 2015-11-06
+- title: "Il progetto SHIELD: modern network-based cybersecurity"
+  author: Politecnico Di Torino
+  file: CTS_2017_presentation.pdf
+  date: 2017-04
+  comment: "Presentation at the CTS 2017 event, Rome (Italy)"
+
+- title: "Security Enhancements by means of NFV and Cognitive Security"
+  author: Telefónica Investigación Y Desarrollo S.A.
+  file: MPLS_SDN_NFV_2017_presentation.pdf
+  date: 2017-03
+  comment: "Presentation at the MPLS+NFV+SDN 2017 World Congress, Paris (France)"
+
+- title: "An innovative approach to Information Security using Big Data, Threat Monitoring and Machine Learning"
+  author: Space Hellas S.A.
+  file: Infocom_2017_poster.pdf
+  date: 2017-03
+  comment: "Poster at the 7th Infocom Security conference, Athens (Greece)"
+
