@@ -12,7 +12,7 @@ permalink: /news/
 		{{ news.date | date: "%b %-d, %Y" }} | {{ news.title | escape_once }}
 	</a>
 	</h4>
-	{{ news.excerpt }}
+	{{ news.excerpt | strip_html }}
 	{% endfor %}
 {% else %}
 	There are no news available at the moment.
