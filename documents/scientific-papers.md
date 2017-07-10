@@ -6,7 +6,7 @@ layout: page
 #### Papers published by the **SHIELD** project
 
 
-{% assign doc_items = (site.data.documents.scientific-papers | sort: 'date') | reverse %}
+{% assign doc_items = (site.data.documents.scientific-papers) %}
 <br/>
 <ul>
 {% for doc in doc_items %}
