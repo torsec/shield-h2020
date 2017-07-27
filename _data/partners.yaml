@@ -84,6 +84,16 @@ sph:
     name: null
   fullname: Space Hellas S.A.
   url: /space-hellas-sa.html
+talaia:
+  contacts:
+  - email: null
+    name: null
+  - email: null
+    name: null
+  - email: null
+    name: null
+  fullname: Talaia Networks
+  url: /talaia-networks.html
 tid:
   contacts:
   - email: null
