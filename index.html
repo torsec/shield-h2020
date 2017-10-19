@@ -20,11 +20,11 @@ layout: default
 
     <h3>Latest news from SHIELD</h3>
 
-	{% capture today_date %}{{ 'now' | date: '%-d %Y'}}{% endcapture %}
-{% assign news_items = (site.news | sort: 'date') | reverse %}
-{% for news in news_items limit:3 %}
+	{% capture today_date %}{{ 'now' | date: "%m/%d/%Y"}}{% endcapture %}
+	{% assign news_items = (site.news | sort: 'date') | reverse %}
+	{% for news in news_items limit:3 %}
     <h5>
-	  {% capture news_date %}{{news.date | date: '%-d %Y'}}{% endcapture %}
+	  {% capture news_date %}{{news.date | date: "%m/%d/%Y"}}{% endcapture %}
 	  {% if  today_date != news_date  %}
       <span class="label label-primary">{{ news.date | date: "%b %-d, %Y" }}</span>
 	  {% else %}
