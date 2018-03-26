@@ -7,6 +7,3 @@ The SHIELD project has been presented in the [Cyber Security Workshop](https://p
 by the project SAINT on March 20th 2018, in Athens. The workshop has been hosted by
 NCSRD "Demokritos", Institute of Informatics and Telecommunications, Integrated
 Systems Laboratory.
-
-The full recording of the streaming session is available on YouTube
-**[at this link.](https://www.youtube.com/watch?v=GA6PPLg4FSo)**
