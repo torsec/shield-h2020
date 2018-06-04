@@ -27,14 +27,14 @@
   title: Requirements, KPIs, design and architecture
 
 - date: m17
-  file: ''
+  file: 'SHIELD_D2.2_Updated_requirements,_KPIs,_design_and_architecture_v.1.0.pdf'
   leader: hpelb
   number: '2.2'
   status: pu
   title: Updated requirements, KPIs, design and architecture
 
 - date: m18
-  file: ''
+  file: 'SHIELD_D2.3_Business_models_evaluation_v.1.0.pdf'
   leader: tid
   number: '2.3'
   status: co
@@ -48,7 +48,7 @@
   title: Specifications, design and architecture for the vNSF ecosystem
 
 - date: m19
-  file: ''
+  file: 'SHIELD_D3.2_Updated_specifications,_design_and_architecture_for_the_vNSF_ecosystem_v1.0.pdf'
   leader: orion
   number: '3.2'
   status: pu
@@ -71,7 +71,7 @@
     information-driven engine
 
 - date: m19
-  file: ''
+  file: 'SHIELD_D4.2_Updated_specifications,_Design_and_Architecture_for_the_Usable_Information-Driven_Engine_v1.0.pdf'
   leader: ubi
   number: '4.2'
   status: pu
@@ -86,7 +86,7 @@
   title: Information-driven engine ready for experiments
 
 - date: m17
-  file: ''
+  file: 'SHIELD_D5.1_Integration_results_of_SHIELD_HW-SW_modules_v.1.0.pdf'
   leader: orion
   number: '5.1'
   status: pu
