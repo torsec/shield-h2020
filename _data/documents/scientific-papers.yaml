@@ -68,3 +68,23 @@
   issn:
   doi:
 
+- title: "The Mouseworld, a security traffic analysis lab based on NFV/SDN"
+  authors: A. Pastor, A. Mozo, D. Lopez, J. Folgueira and A. Kapodistria
+  date: 27-30 August 2018
+  how: ARES Conference 2018 (CyberTIM 2018)
+  where: Hamburg (Germany)
+  pages: 
+  file: CyberTIM2018_NFV_ML_training.pdf
+  issn:
+  doi:
+
+- title: "Evaluation of Apache Spot’s machine learning capabilities in an SDN/NFV enabled environment "
+  authors: Christos M. Mathas, Olga E. Segou, Georgios Xylouris, Dimitris Christinakis, Michail - Alexandros Kourtis, Costas Vassilakis and Anastasios Kourtis
+  date: 27-30 August 2018
+  how: ARES Conference 2018 (CyberTIM 2018)
+  where: Hamburg (Germany)
+  pages: 
+  file:
+  issn:
+  doi:
+
