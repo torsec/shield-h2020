@@ -66,7 +66,7 @@
   pages: 
   file: netsoft2018_paper.pdf
   issn:
-  doi:
+  doi: 10.1109/NETSOFT.2018.8459903
 
 - title: "The Mouseworld, a security traffic analysis lab based on NFV/SDN"
   authors: A. Pastor, A. Mozo, D. Lopez, J. Folgueira and A. Kapodistria
