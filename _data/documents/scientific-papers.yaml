@@ -48,6 +48,16 @@
   issn:
   doi: 10.1109/NFV-SDN.2017.8169869
 
+- title: "SHIELD - Securing against intruders and other threats through a NFV-enabled environment"
+  authors: Attak H. et al.
+  date: 12 November 2017
+  where: Springer, Computer Communications and Networks series (CCN)
+  how: Guide to Security in SDN and NFV - Challenges, Opportunities, and Applications 
+  pages: 
+  file:
+  issn:
+  doi: 10.1007/978-3-319-64653-4_8
+
 - title: "Factors Influencing Market Adoption and Evolution of NFV/SDN Cybersecurity Solutions. Evidence from SHIELD Project "
   authors: D. Katsianis, I. Neokosmidis, A. Pastor, L. Jacquin and G. Gardikis
   date: 18-21 June 2018
