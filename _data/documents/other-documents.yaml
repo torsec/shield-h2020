@@ -58,11 +58,26 @@
   date: 2017-12
   comment: "SHIELD Newsletter n.2 - December 2017"
 
+- title: "ACME STAR as an MSP enabler for TLS traffic"
+  author: Telefónica Investigación Y Desarrollo S.A.
+  file: ETSI_SHIELD_ACME_STAR_TLS.pdf
+  date: 2018-6
+  comment: "Presentation on the proxyTLS vNSF as Middlebox at the ETSI Security Week"
+
+- title: "Attestation of SHIELD's network infrastructure and middleboxes"
+  author: Hewlett-Packard Limited (Labs) 
+  file: SHIELD_NWK_INFRAS_MIDDLEBOXES_HPE_JACQUIN.pdf
+  date: 2018-6
+  comment: "Presentation on the SHIELD attestation framework applied to Middleboxes the ETSI Security Week"
+
 - title: "A universal security infrastructure for ISPs and corporate networks using NFV-enabled technologies: the SHIELD project"
   author: SHIELD consortium
   file: shield_newsletter_3_july_2018.pdf
   date: 2018-7
   comment: "SHIELD Newsletter n.3 - July 2018"
 
-
-
+- title: "Trust and integrity in SDN environments"
+  author: Politecnico di Torino
+  file: SHIELD_CODE2018_SDN_security_Lioy.pdf
+  date: 2018-7
+  comment: "Presentation at the SDN security workshop within the CODE-2018 event"
