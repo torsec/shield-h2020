@@ -26,7 +26,7 @@
   pages: 
   file: SHIELD_a_novel_NFV-based_cybersecurity_framework.pdf
   issn:
-  doi:
+  doi: 10.1109/NETSOFT.2017.8004228
 
 - title: "On the establishment of trust in the cloud-based ETSI NFV framework"
   authors: M, De Benedictis and A. Lioy
@@ -36,7 +36,7 @@
   pages: 
   file: sn-2017-paper.pdf
   issn:
-  doi: 10.1109%2FNFV-SDN.2017.8169864
+  doi: 10.1109/NFV-SDN.2017.8169864
 
 - title: "NFV-based network protection: the SHIELD approach"
   authors: Lioy A., Gardikis G., Gaston B., Jacquin L., De Benedictis M., Angelopoulos Y. and Xylouris C.
@@ -46,7 +46,7 @@
   pages: 
   file: nfvsdn2017-demo-paper.pdf
   issn:
-  doi: 10.1109%2FNFV-SDN.2017.8169869
+  doi: 10.1109/NFV-SDN.2017.8169869
 
 - title: "Factors Influencing Market Adoption and Evolution of NFV/SDN Cybersecurity Solutions. Evidence from SHIELD Project "
   authors: D. Katsianis, I. Neokosmidis, A. Pastor, L. Jacquin and G. Gardikis
@@ -56,7 +56,7 @@
   pages: 
   file: eucnc2018_paper.pdf
   issn:
-  doi:
+  doi: 10.1109/EuCNC.2018.8442845
 
 - title: "Container-based design of a Virtual Network Security Function"
   authors: M. De Benedictis, A. Lioy and P. Smiraglia
@@ -76,7 +76,7 @@
   pages: 
   file: CyberTIM2018_NFV_ML_training.pdf
   issn:
-  doi:
+  doi: 10.1145/3230833.3233283
 
 - title: "Evaluation of Apache Spot’s machine learning capabilities in an SDN/NFV enabled environment "
   authors: Christos M. Mathas, Olga E. Segou, Georgios Xylouris, Dimitris Christinakis, Michail - Alexandros Kourtis, Costas Vassilakis and Anastasios Kourtis
@@ -86,5 +86,5 @@
   pages: 
   file:
   issn:
-  doi:
+  doi: 10.1145/3230833.3233278
 
