@@ -81,3 +81,11 @@
   file: SHIELD_CODE2018_SDN_security_Lioy.pdf
   date: 2018-7
   comment: "Presentation at the SDN security workshop within the CODE-2018 event"
+
+- title: "The role of Trusted Computing in the SHIELD project"
+  author: Hewlett-Packard Limited (Labs)
+  file: SHIELD_TCG_2018.pdf
+  date: 2018-10
+  comment: "Presentation at the Trusted Computing Group annual members meeting"
+
+
