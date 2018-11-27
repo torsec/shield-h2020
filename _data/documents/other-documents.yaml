@@ -90,7 +90,13 @@
 
 - title: "Application of distributed computing machine-learning technologies to cybersecurity"
   author: INFILI Technologies
-  file: shield_caesar_2018.pdf
+  file: shield_caesar_2018.pptx
   date: 2018-11
   comment: "Presentation at the C&ESAR 2018 conference"
+
+- title: "Project SHIELD: Securing against intruders and other threats through an NFV-enabled environment"
+  author: ORION
+  file: SHIELD_overview_presentation_INFOCOM2018.pptx
+  date: 2018-11
+  comment: "Presentation at the InfoCom World 2018 conference"
 
