@@ -17,5 +17,5 @@ trusted protection infrastructure to effectively counter cyberattacks.
 The technical aspects will be complemented by a market and economical
 analysis, to evaluate benefits versus costs. 
 
-Detailed outline of the tutorial and additional information [here](http://www.icissp.org/tutorials.aspx#1). 
+Detailed outline of the tutorial and additional information [here](http://www.icissp.org/Tutorials.aspx?y=2019). 
 
