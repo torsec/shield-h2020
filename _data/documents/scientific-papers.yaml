@@ -108,3 +108,13 @@
   issn:
   doi:
 
+- title: "Integrity verification of Docker containers for a lightweight cloud environment"
+  authors: Marco De Benedictis, Antonio Lioy
+  date: August 2019
+  how: Future Generation Computer Systems, Volume 97
+  where: Elsevier
+  pages: 236 - 246
+  file: 
+  issn: 0167-739X
+  doi: 10.1016/j.future.2019.02.026
+
