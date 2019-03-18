@@ -56,7 +56,7 @@
     ecosystem
 
 - date: m27
-  file: ''
+  file: 'SHIELD_D3.3_vNSF_framework_ready_for_experiments_v1.0.pdf'
   leader: i2cat
   number: '3.3'
   status: pu
@@ -79,7 +79,7 @@
     information-driven engine
 
 - date: m27
-  file: ''
+  file: 'SHIELD_D4.3_Information-driven_engine_ready_for_experiments_v.1.0.pdf'
   leader: infili
   number: '4.3'
   status: pu
@@ -121,7 +121,7 @@
   title: Interim report on Exploitation Activities
 
 - date: m30
-  file: ''
+  file: 'SHIELD_D6.4_Final_Report_on_Exploitation_Activities_v.1.0.pdf'
   leader: incites
   number: '6.4'
   status: pu
