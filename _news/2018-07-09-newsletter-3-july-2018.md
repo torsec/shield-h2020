@@ -49,18 +49,18 @@ Solutions. Evidence from SHIELD project”</emph> is presented in EuCNC 2018 wit
 <p>
 	Moreover, the project has been presented at the <a href="https://project-saint.eu/event/saint-workshop-march-2018">Cyber Security Workshop</a>, organised in Athens (Greece) on March
 20 by the <strong>SAINT</strong> project. SHIELD project has been presented in the <a href="https://www.recred.eu/sites/default/files/h2020_project_clustering_agenda.pdf">H2020 Project Clustering workshop for
-demonstrations</a>, organised by the project <strong>ReCRED</strong> on April 20 th 2018, in Athens. SHIELD contributions in
-middleboxes’ security have been presented at the <a href="https://www.etsi.org/news-events/events/1250-2018-06-security-week">ETSI Security Week</a>, held in Sophia Antipolis (France) on June 11 th
+demonstrations</a>, organised by the project <strong>ReCRED</strong> on April 20th 2018, in Athens. SHIELD contributions in
+middleboxes’ security have been presented at the <a href="https://www.etsi.org/news-events/events/1250-2018-06-security-week">ETSI Security Week</a>, held in Sophia Antipolis (France) on June 11th
 to 15 th June 2018.
 </p>
 <p>
 The scientific contributions of the SHIELD project are discussed in papers submitted to international conferences.
 The paper entitled <emph>“Container-based design of a Virtual Network Security Function)”</emph> has been presented to the <a href="http://netsoft2018.ieee-netsoft.org/">IEEE
-Conference on Network Softwarization</a> (<strong>NetSoft 2018</strong>), held in Montreal (Canada) on June 25 th to 29 th . Two scientific
+Conference on Network Softwarization</a> (<strong>NetSoft 2018</strong>), held in Montreal (Canada) on June 25th to 29th . Two scientific
 papers, entitled <emph>“Evaluation of Apache Spot’s machine learning capabilities in an SDN/NFV enabled environment”</emph>
 and <emph>“The Mouseworld, a security traffic analysis lab based on NFV/SDN”</emph> have been accepted for publication at the
 1 st International Workshop on Cyber Threat Intelligence Management, held in conjunction with the <strong>ARES 2018</strong>
-conference in Hamburg (Germany) on August 27 th to 30 th .
+conference in Hamburg (Germany) on August 27th to 30th .
 </p>
 <p>
 	All the demonstration videos from EuCNC are available through the <strong>EU SHIELD project</strong> YouTube channel, along with
