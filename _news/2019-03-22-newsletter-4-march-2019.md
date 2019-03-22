@@ -1,5 +1,5 @@
 ---
-    title: SHIELD Newsletter n.3 - July 2018
+    title: SHIELD Newsletter n.4 - March 2019
     layout: news
 ---
 
