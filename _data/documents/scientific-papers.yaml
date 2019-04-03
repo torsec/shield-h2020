@@ -118,3 +118,12 @@
   issn: 0167-739X
   doi: 10.1016/j.future.2019.02.026
 
+- title: "Adding Support for Automatic Enforcement of Security Policies in NFV Networks"
+  authors: C.Basile, F.Valenza, A.Lioy, D.R.Lopez, A.Pastor Perales
+  date: (accepted for publication)
+  how: IEEE/ACM Transactions on Networking 
+  where: IEEE
+  pages:
+  file: 
+  issn:
+  doi: 10.1109/TNET.2019.2895278
