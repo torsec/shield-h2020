@@ -127,3 +127,23 @@
   file: 
   issn:
   doi: 10.1109/TNET.2019.2895278
+
+- title: "A proposal for trust monitoring in a Network Functions Virtualisation Infrastructure"
+  authors: M. De Benedictis, A. Lioy
+  date: (accepted for publication)
+  how: 2019 1st Workshop on Cyber-Security Threats, Trust and Privacy Management in Software-Defined and Virtualized Infrastructures
+  where: Paris (France)
+  pages:
+  file: 
+  issn:
+  doi:
+
+- title: "Towards a secure and lightweight Network Function Virtualisation environment"
+  authors: M. De Benedictis, A. Lioy, P. Smiraglia
+  date: (accepted for publication)
+  how: International Journal of Grid and Utility Computing
+  where:
+  pages:
+  file: 
+  issn:
+  doi:
